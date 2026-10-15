@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Responsive MyPortfolio - Azis</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Beranda</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Keahlian</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </header>
+
+    <!-- Halaman Beranda (Hero) -->
+    <main id="hero">
+        <div class="image">
+            <img src="gambar/gambar1.jpg" alt="gambar azis">
+        </div>
+
+        <div class="perkenalan">
+            <div class="paragraph">
+                <h2>Halo, My Name Azis Steven S. Ance</h2>
+                <p>
+                    "Saya adalah Junior programmer yang baru mulai masuk dunia perkodingan"
+                </p>
+            </div>
+
+            <div class="button-group">
+                <a href="#about" class="btn-primary">Lihat Project</a>
+                <a href="#contact" class="btn-secondary">Hubungi Saya</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Halaman About (Tentang) -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        
+        <div class="pembungkus">
+            <div class="tentang">
+                <h3>Halo, saya Azis Steven S. Ance</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, nisi porro maiores unde, et iure ab laudantium, quia sunt culpa totam! Nam officiis dolorum dicta? Blanditiis illo sapiente veniam aliquam velit dolor voluptate quaerat soluta exercitationem ullam porro, aut quae incidunt quo iusto officiis, sit similique quibusdam error dolore minus?
+                </p>
+            </div>
+            <div class="gambar">
+                <img src="gambar/gambar2.jpg" alt="Foto Tentang 1">
+            </div>
+        </div>
+
+        <div class="pembungkus pembungkus2">
+            <div class="gambar2">
+                <img src="gambar/gambar3.jpg" alt="Foto Tentang 2">
+            </div>
+            <div class="tentang2">
+                <h3>Halo, saya Azis Steven S. Ance</h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, nisi porro maiores unde, et iure ab laudantium, quia sunt culpa totam! Nam officiis dolorum dicta? Blanditiis illo sapiente veniam aliquam velit dolor voluptate quaerat soluta exercitationem ullam porro, aut quae incidunt quo iusto officiis, sit similique quibusdam error dolore minus?
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section Skills (Keahlian) -->
+    <section id="skills" class="skills-section">
+        <h2>Keahlian Saya</h2>
+        <div class="skills-container">
+            <div class="skill-card">HTML5</div>
+            <div class="skill-card">CSS3</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Git & GitHub</div>
+            <div class="skill-card">Internet Of Thinks</div>
+            <div class="skill-card">Electrical Engineering</div>
+        </div>
+    </section>
+
+    <!-- Section Contact (Kontak dengan Form Input) -->
+    <section id="contact" class="contact-section">
+        <h2>Hubungi Saya</h2>
+        <p class="contact-desc">Punya pertanyaan, proyek menarik, atau ingin berdiskusi? Kirimkan pesan melalui form di bawah ini!</p>
+        
+        <div class="contact-container">
+            <form action="#" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" placeholder="Masukkan nama kamu..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email kamu..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tuliskan pesan atau tujuanmu di sini..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AzisAnce. Dibuat dengan semangat belajar pemrograman.</p>
+    </footer>
+</body>
+</html>

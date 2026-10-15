@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Styling Navbar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 1.2rem 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+/* Styling Halaman Beranda (Hero) */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    text-align: center;
+    width: 100%;
+    min-height: 90vh;
+    padding: 40px 20px;
+    gap: 40px;
+}
+
+main .image {
+    padding: 10px;
+}
+
+main .image img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+main .perkenalan {
+    margin: 20px;
+    padding: 20px;
+    max-width: 600px;
+    text-align: left;
+}
+
+main .perkenalan .paragraph {
+    padding: 10px;
+}
+
+main .perkenalan .paragraph h2 {
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #154891;
+    font-size: 2rem;
+}
+
+main .perkenalan .paragraph p {
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+}
+
+main .btn-primary, main .btn-secondary {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+main .btn-primary:hover, main .btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+/* Style Section About */
+section {
+    margin: 0;
+    background-color: antiquewhite;
+    width: 100%;
+    min-height: 80vh;
+    padding: 80px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section h2 {
+    text-align: center;
+    color: #154891;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+section .pembungkus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+    padding: 30px;
+    border: 2px solid #154891;
+    border-radius: 12px;
+    background: white;
+    max-width: 1000px;
+    width: 100%;
+    gap: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+section .tentang {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex: 1;
+}
+
+section .tentang h3 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+section .tentang p {
+    color: #666;
+    line-height: 1.6;
+}
+
+section .pembungkus .gambar {
+    width: 220px;
+    flex-shrink: 0;
+}
+
+section .pembungkus .gambar img {
+    width: 100%; 
+    height: auto;
+    border-radius: 50%;
+    padding: 10px;
+    object-fit: cover;
+}
+
+section .pembungkus2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(170, 67, 67);
+    margin: 15px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background: white;
+    max-width: 1000px;
+    width: 100%;
+    gap: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+section .pembungkus2 .gambar2 {
+    width: 220px;
+    flex-shrink: 0;
+}
+
+section .pembungkus2 .gambar2 img {
+    width: 100%; 
+    height: auto;
+    border-radius: 50%;
+    padding: 10px;
+    object-fit: cover;
+}
+
+section .pembungkus2 .tentang2 {
+    flex: 1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section .pembungkus2 .tentang2 h3 {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+section .pembungkus2 .tentang2 p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Style Section Skills */
+.skills-section {
+    background-color: #ffffff;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    background-color: #e0eafc;
+    color: #154891;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Style Section Contact (Form Input & Textarea) */
+.contact-section {
+    background-color: #f1f3f5;
+    text-align: center;
+}
+
+.contact-desc {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 2px solid #007bff;
+    text-align: left;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #154891;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    font-size: 0.9rem;
+}
+
+/* Styling Responsive Media Queries */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        gap: 1.2rem;
+        font-size: 0.95rem;
+    }
+
+    main {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    main .perkenalan {
+        text-align: center;
+    }
+
+    main .image img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .button-group {
+        justify-content: center;
+    }
+
+    section .pembungkus, 
+    section .pembungkus2 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section .pembungkus .gambar,
+    section .pembungkus2 .gambar2 {
+        width: 150px;
+        margin: 0 auto;
+    }
+}
